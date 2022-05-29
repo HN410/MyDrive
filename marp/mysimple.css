@@ -23,7 +23,7 @@ section::after {
 
 h1{
   position: absolute;
-  top:0.5em;
+  top:1em;
   border-bottom: solid 3px #000000;
 }
 h1 ~ *{
