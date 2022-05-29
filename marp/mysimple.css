@@ -1,0 +1,40 @@
+/* @theme mysimple */
+@import 'default';
+
+section:not(.front) {
+  background-color: #e2e2e2;
+  border-left: 20px solid #3c328f;
+}
+section.front{
+  background-color: #3f3f3f;
+}
+
+section::after {
+  content: attr(data-marpit-pagination);
+  padding: inherit;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+h1{
+  border-bottom: solid 3px #000000;
+}
+
+h1::before {
+  position: absolute;
+  bottom: 0;
+}
+
+section.front *{
+  text-align: center;
+  color: #cacaca;
+}
+
+section.front  h1{
+  font-size: 2em;
+  border-bottom: 0;
+  text-align: center;
+
+}
