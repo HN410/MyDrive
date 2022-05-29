@@ -2,6 +2,7 @@
 @import 'default';
 
 section:not(.front) {
+  position: relative;
   background-color: #e2e2e2;
   border-left: 20px solid #3c328f;
 }
@@ -11,15 +12,24 @@ section.front{
 
 section::after {
   content: attr(data-marpit-pagination);
+  color: #000;
+  font-size: 30px;
   padding: inherit;
   pointer-events: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -2em;
+  right: -1.5em;
 }
 
 h1{
+  position: absolute;
+  top:0.5em;
   border-bottom: solid 3px #000000;
+}
+h1 ~ *{
+  position: relative;
+  top: 0.5em;
+  padding-top: 0.5em;
 }
 
 h1::before {
@@ -33,6 +43,7 @@ section.front *{
 }
 
 section.front  h1{
+  position: relative;
   font-size: 2em;
   border-bottom: 0;
   text-align: center;
