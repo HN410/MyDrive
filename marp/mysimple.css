@@ -1,10 +1,11 @@
 /* @theme mysimple */
 @import 'default';
+/* @auto-scaling true */
 
 section:not(.front) {
   position: relative;
   background-color: #e2e2e2;
-  border-left: 20px solid #3c328f;
+  border-left: 20px solid #31328f;
 }
 section.front{
   background-color: #3f3f3f;
@@ -22,7 +23,7 @@ section::after {
 }
 
 h1{
-  position: absolute;
+  position:absolute;
   top:0.5em;
   border-bottom: solid 3px #000000;
 }
@@ -49,3 +50,32 @@ section.front  h1{
   text-align: center;
 
 }
+
+:root {
+  --fw: 1;
+}
+/* ----- レイアウト ----- */
+.flex{
+  display: flex;
+  gap: 1em;
+}
+.sa {
+  justify-content: space-around;
+  /* border: 8px dashed rgb(15, 166, 226);
+  background-color: rgb(222, 244, 255); */
+}
+.sb {
+  justify-content: space-between;
+  /* border: 8px dashed rgb(21, 17, 255);
+  background-color: rgb(222, 244, 255); */
+}
+.sa div,.sb div{
+  margin: 0.1em;
+  /* border: 8px dashed rgb(80, 177, 109);
+  background-color: rgb(227, 250, 237); */
+}
+.fw div{
+  flex: var(--fw);
+  /* background-color: rgb(244, 238, 255);
+  border: 8px dashed rgb(93, 0, 255); */
+}/* ---------- */
